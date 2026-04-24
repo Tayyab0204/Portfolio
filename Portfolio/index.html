@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tayyab Ali — Front-End Web Developer</title>
+  <meta name="description" content="Portfolio of Tayyab Ali, a front-end web developer based in Rawalpindi, Pakistan. Building beautiful, responsive web experiences with HTML, CSS, JavaScript and Bootstrap." />
+  <meta name="author" content="Tayyab Ali" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tayyab Ali — Front-End Web Developer" />
+  <meta property="og:description" content="Portfolio of Tayyab Ali, a front-end web developer based in Rawalpindi, Pakistan." />
+  <meta property="og:type" content="website" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- AOS scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand brand" href="#home">
+        <span class="brand-mark">T</span>
+        <span class="brand-text">Tayyab Ali<span class="accent">.</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-accent btn-sm px-3" href="Tayyab Ali-Resume.pdf" target="_blank">
+            <i class="bi bi-download me-1"></i> CV</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-accent btn-sm px-3" href="#contact"><i class="bi bi-send-fill me-1"></i> Hire Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7" data-aos="fade-right">
+          <span class="eyebrow"><span class="dot"></span> Available for Front-End Roles</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="grad">Tayyab Ali.</span><br/>
+            I craft <span class="underline-accent">responsive</span> &amp; modern websites.
+          </h1>
+          <p class="hero-sub">
+            Front-End Web Developer based in Rawalpindi, Pakistan. I build clean, fast and pixel-perfect websites using
+            <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>Bootstrap</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-accent btn-lg px-4">
+              <i class="bi bi-rocket-takeoff-fill me-2"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+              <i class="bi bi-chat-dots me-2"></i> Let's Talk
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/Tayyab0204" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/tayyabali-dev" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:tali3851377@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="tel:+923475382663" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="avatar-wrap">
+            <div class="avatar-glow"></div>
+            <div class="avatar-card">
+              <div class="avatar-inner">
+                <img src="images/tayyab.jpg" alt="Tayyab Ali" class="avatar-photo" />
+              </div>
+              <div class="floating-chip chip-1"><i class="bi bi-code-slash"></i> &lt;HTML/&gt;</div>
+              <div class="floating-chip chip-2"><i class="bi bi-palette-fill"></i> CSS3</div>
+              <div class="floating-chip chip-3"><i class="bi bi-braces"></i> JavaScript</div>
+              <div class="floating-chip chip-4"><i class="bi bi-bootstrap-fill"></i> Bootstrap</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-up">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">A passionate developer who loves clean code &amp; great design.</h2>
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <p class="lead-text">
+            I'm <strong>Tayyab Ali</strong>, a front-end web developer focused on building modern, responsive
+            and user-friendly websites. I enjoy turning complex ideas into simple, clean and engaging user experiences.
+          </p>
+          <p class="muted-text">
+            I work with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and
+            <strong>Bootstrap</strong> to create fast, smooth interactions and pixel-perfect interfaces.
+            I'm currently looking for front-end developer opportunities where I can grow, contribute, and ship great work.
+          </p>
+
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="info-row"><span>Name</span><strong>Tayyab Ali</strong></div>
+              <div class="info-row"><span>Role</span><strong>Front-End Developer</strong></div>
+              <div class="info-row"><span>Location</span><strong>Rawalpindi, Pakistan</strong></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-row"><span>Email</span><strong>tali3851377@gmail.com</strong></div>
+              <div class="info-row"><span>Phone</span><strong>+92 347-5382663</strong></div>
+              <div class="info-row"><span>Status</span><strong class="text-accent">Open to Work</strong></div>
+            </div>
+          </div>
+
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <a class="btn btn-accent" href="#contact"><i class="bi bi-send-fill me-1"></i> Contact Me</a>
+            <a class="btn btn-outline-light" href="https://topicdesign.netlify.app" target="_blank" rel="noopener">
+              <i class="bi bi-globe2 me-1"></i> Visit Live Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="row g-3 g-md-4 mt-5 stats-row" data-aos="fade-up">
+        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Projects Built</div></div></div>
+        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num">1+</div><div class="stat-label">Years Coding</div></div></div>
+        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num">80%</div><div class="stat-label">Responsive</div></div></div>
+        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num">24/7</div><div class="stat-label">Available</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">My Toolkit</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-sub">The tools I use every day to build modern web experiences.</p>
+      </div>
+
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+          <div class="skill-card">
+            <i class="bi bi-filetype-html" style="color:#E34F26"></i>
+            <h5>HTML5</h5>
+            <p>Semantic markup &amp; accessibility</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+          <div class="skill-card">
+            <i class="bi bi-filetype-css" style="color:#1572B6"></i>
+            <h5>CSS3</h5>
+            <p>Modern layouts, Flex &amp; Grid</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="skill-card">
+            <i class="bi bi-filetype-js" style="color:#F7DF1E"></i>
+            <h5>JavaScript</h5>
+            <p>Interactive &amp; dynamic UIs</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+          <div class="skill-card">
+            <i class="bi bi-bootstrap-fill" style="color:#7952B3"></i>
+            <h5>Bootstrap</h5><p>Responsive UI framework</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-card">
+            <i class="bi bi-phone" style="color:#22d3ee"></i>
+            <h5>Responsive Design</h5><p>Mobile-first, all screen sizes</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
+          <div class="skill-card">
+            <i class="bi bi-git" style="color:#F05032"></i>
+            <h5>Git &amp; GitHub</h5><p>Version control &amp; collaboration</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="skill-card">
+            <i class="bi bi-vector-pen" style="color:#F24E1E"></i>
+            <h5>UI / UX</h5><p>Clean, user-friendly interfaces</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="350">
+          <div class="skill-card">
+            <i class="bi bi-lightning-charge-fill" style="color:#facc15"></i>
+            <h5>Performance</h5><p>Fast-loading, optimized pages</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A selection of websites I have designed and developed.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Real project -->
+         <!-- Topic listing -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="project-card">
+            <a href="https://topicdesign.netlify.app" target="_blank" rel="noopener" class="project-thumb">
+              <img src="images/topic-listing.png" alt="My Topic Listing — Hero Section" loading="lazy" />
+              <div class="thumb-window">
+                <span></span><span></span><span></span>
+              </div>
+            </a>
+            <div class="project-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h5 class="mb-0">My Topic Listing</h5>
+                <span class="badge-live"><span class="dot"></span> Live</span>
+              </div>
+              <p>A clean, responsive listing website built with HTML, CSS, JavaScript &amp; Bootstrap. Deployed live on Netlify.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-accent" href="https://topicdesign.netlify.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i> Live Demo</a>
+                <a class="btn btn-sm btn-outline-light" href="https://github.com/Tayyab0204/Topic" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+          <!-- Barista Cafe -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/barista-cafe.png" alt="Barista Cafe — Restaurant Landing" loading="lazy" />
+              <div class="thumb-window"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h5>Barista Cafe — Restaurant</h5>
+                <span class="badge-live"><span class="dot"></span> Live</span>
+              </div>  
+              <p>Responsive coffee restaurant frontend with menu, ordering UI, booking form and contact features.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-accent" href="https://baristabrew.netlify.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i> Live Demo</a>
+                <a class="btn btn-sm btn-outline-light" href="https://github.com/Tayyab0204/Barista-Brew-Cafe" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Foodies -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="https://images3.alphacoders.com/939/939772.jpg" alt="Foodies" loading="lazy" />
+              <div class="thumb-window"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h5>Foodies</h5>
+                <span class="badge-live"><span class="dot"></span> Live</span>
+              </div>  
+              <p>Foodies platform displaying food items, clean design, and user-friendly responsive interface.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-accent" href="https://fastfoodfoodies.netlify.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i> Live Demo</a>
+                <a class="btn btn-sm btn-outline-light" href="https://github.com/Tayyab0204/Foodies" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Houses -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8fDA%3D" alt="Luxury Houses-Real Estate" loading="lazy" />
+              <div class="thumb-window"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h5>Luxury Houses-Real Estate</h5>
+                <span class="badge-live"><span class="dot"></span> Live</span>
+              </div>
+              <p>A professional luxury houses landing page with properties, services, about and contact sections — fully responsive.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-accent" href="https://royalhouses.netlify.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i> Live Demo</a>
+                <a class="btn btn-sm btn-outline-light" href="https://github.com/Tayyab0204/Dream-House-Real-Estate-Project" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Business -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/business-pro.png" alt="BusinessPro — Corporate Landing" loading="lazy" />
+              <div class="thumb-window"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <h5>BusinessPro — Corporate Site</h5>
+              <p>A professional business landing page with hero, services, portfolio and testimonial sections — fully responsive.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-accent" href="https://github.com/Tayyab0204/Business-Pro" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> View on GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Designer -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="https://wallpaperaccess.com/full/1658081.jpg" alt="Designer" loading="lazy" />
+              <div class="thumb-window"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+                <h5>Designer</h5>
+              <p>Creative designer website highlighting unique visuals and clean user interface design.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-accent" href="https://github.com/Tayyab0204/Designer" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> View on GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's build something great together.</h2>
+        <p class="section-sub">Have a project in mind, a job opportunity, or just want to say hi? My inbox is open.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-5" data-aos="fade-right">
+          <a class="contact-card" href="mailto:tali3851377@gmail.com">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">tali3851377@gmail.com</div>
+            </div>
+          </a>
+          <a class="contact-card" href="tel:+92 3475382663">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+92 347-5382663</div>
+            </div>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/tayyabali-dev" target="_blank" rel="noopener">
+            <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">tayyabali-dev</div>
+            </div>
+          </a>
+          <a class="contact-card" href="https://github.com/Tayyab0204" target="_blank" rel="noopener">
+            <div class="contact-icon"><i class="bi bi-github"></i></div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/Tayyab0204</div>
+            </div>
+          </a>
+          <a class="contact-card" href="https://baristabrew.netlify.app/" target="_blank" rel="noopener">
+            <div class="contact-icon"><i class="bi bi-globe2"></i></div>
+            <div>
+              <div class="contact-label">Live Project</div>
+              <div class="contact-value">baristabrew.netlify.app</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
+  <input type="hidden" name="form-name" value="contact">
+   <input type="hidden" name="bot-field">
+
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Your Name</label>
+      <input type="text" class="form-control" name="name" placeholder="Jane Doe" required />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Your Email</label>
+      <input type="email" class="form-control" name="email" placeholder="jane@example.com" required />
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Subject</label>
+      <input type="text" class="form-control" name="subject" placeholder="Project / Job opportunity" required />
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Message</label>
+      <textarea class="form-control" name="message" rows="5" placeholder="Tell me a little about your project or role..." required></textarea>
+    </div>
+
+    <div class="col-12 d-grid">
+      <button type="submit" class="btn btn-accent btn-lg">
+        <i class="bi bi-send-fill me-2"></i> Send Message
+      </button>
+    </div>
+  </div>
+  <div id="formToast" class="form-toast">
+  Message Sent Successfully!
+</div>
+</form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-6">
+          <div class="brand">
+            <span class="brand-mark">T</span>
+            <span class="brand-text">Tayyab<span class="accent">.</span></span>
+          </div>
+          <p class="mb-0 muted-text mt-2">© <span id="year"></span> Tayyab Ali. Built with HTML, CSS, JS &amp; Bootstrap.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="footer-socials">
+            <a href="https://github.com/Tayyab0204" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/tayyabali-dev" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:tali3851377@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="tel:+92 3475382663" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+            <a href="https://baristabrew.netlify.app" target="_blank" rel="noopener" title="Live Project"><i class="bi bi-globe2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
