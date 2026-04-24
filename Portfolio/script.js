@@ -63,33 +63,54 @@
   // 6. Contact form (no real submission — just show toast)
 var form = document.getElementById('contactForm');
 var toast = document.getElementById('formToast');
+var submitBtn = document.getElementById('submitBtn');
+var btnDefault = submitBtn ? submitBtn.querySelector('.btn-default') : null;
+var btnLoading = submitBtn ? submitBtn.querySelector('.btn-loading') : null;
+
+function setLoading(isLoading) {
+  if (!submitBtn) return;
+  submitBtn.disabled = isLoading;
+  if (btnDefault && btnLoading) {
+    btnDefault.classList.toggle('d-none', isLoading);
+    btnLoading.classList.toggle('d-none', !isLoading);
+  }
+}
+
+function showToast(message, isError) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.toggle('error', !!isError);
+  toast.classList.add('show');
+  setTimeout(function () {
+    toast.classList.remove('show');
+  }, 3000);
+}
 
 if (form) {
   form.addEventListener('submit', function (e) {
-    e.preventDefault(); //  reload stop
+    e.preventDefault();
+    setLoading(true);
 
     var data = new FormData(form);
 
     fetch("/", {
       method: "POST",
-      body: data
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(data).toString()
     })
-    .then(function () {
-
-      if (toast) {
-        toast.classList.add('show');
-
-        setTimeout(function () {
-          toast.classList.remove('show');
-        }, 3000);
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("Submission failed");
       }
-
-      form.reset(); // form clear
+      showToast("Message Sent Successfully!", false);
+      form.reset();
     })
     .catch(function () {
-      alert("Error sending message");
+      showToast("Error sending message. Please try again.", true);
+    })
+    .then(function () {
+      setLoading(false);
     });
-
   });
 }
 
